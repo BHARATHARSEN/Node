@@ -1,3 +1,4 @@
+const { log } = require('console');
 const path = require('path')
 const { clearScreenDown } = require('readline')
 
@@ -8,3 +9,6 @@ console.log(filePath);
 
 const base = path.basename(filePath)
 console.log(base);
+
+setInterval(() => {console.log(path);
+},2000)
