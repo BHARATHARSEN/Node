@@ -9,3 +9,5 @@ writeFileSync(
   "./content/result-sync.txt",
   `Hey Im making it interesting ${first}`
 );
+
+// I just wanna code now
