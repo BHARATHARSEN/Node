@@ -10,4 +10,3 @@ writeFileSync(
   `Hey Im making it interesting ${first}`
 );
 
-// I just wanna code now
