@@ -8,7 +8,7 @@ console.log(first, second);
 
 writeFileSync(
   "./content/result-sync.txt",
-  `Hey Im making it interesting ${first}, ${second}`,
+  `Hey I'm making it interesting ${first}, ${second}`,
   {flag :'a'}
 )
 
