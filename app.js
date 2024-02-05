@@ -1,43 +1,43 @@
-// const http = require('http');
 
-// const server = http.createServer((request,response) => {
-//     if(request.url==='/'){
-//         response.end("Heyyya to our Home");
-//     }
-//     if(request.url === '/about'){
-//         response.end('This is the about page')
-//     };
-//     response.end(`
-//     <h1>Oh Crap!</h1>
-//     <p>There is some issue so please go back to home and figure it out</p>
-//     <a href="/">Back Home</a>
-    
-    
-//     `);
 
-// })
+// const http = require("http");
+// const port = 5000;
 
-// server.listen(5000);
+// const server = http.createServer((req, res) => {
+//   if (req.url === "/") {
+//     res.writeHead(200, { "Content-Type": "text/plain" });
+//     res.end("Home Page is always open");
+//   } else if (req.url === "/about") {
+//     res.writeHead(200, { "Content-Type": "text/plain" });
+//     res.end("About Page");
+//   } else {
+//     res.writeHead(404, { "Content-Type": "text/plain" });
+//     res.end("Error Page");
+//   }
+// });
 
-const http = require('http');
+// server.listen(port, () => {
+//   console.log(`Server is running on port ${port}`);
+// });
 
-const server = http.createServer((req,res) => {
-    if(req.url === '/'){
-        res.end("Bro you got to the HomePage Spidey")
-    }
-    if (req.url === "/about") {
-      res.end("Bro you got to the About Page Spidey");
-    }
-    res.end(`
-    <h1>oops !</h1>
-    <p>We can't see the page you are looking for .</p>
-    <a href = "/">Back HomePage </a>`)
-})
+// const {readFile} = require('fs')
 
-server.listen(5000)
+// const getText = (path) => {
+//     return new Promise((resolve, reject) => {
+//         readFile(path,'utf8',(err,data) => {
+//             if(err){
+//                 reject(err);
+//             }else{
+//                 resolve(data)
+//             }
 
-const _ = require('lodash');
-const items = [1,[2,[3,[4]]]]
-const newItems = _.flattenDeep(items)
-console.log(newItems);
+//         })
+//     })
+// }
 
+// getText('./content/first.txt').then(result => console.log(result))
+// .catch(err => console.log(err))
+
+const EventEmitter = require('events')
+
+const customEmittor
